@@ -6,6 +6,7 @@ body {
   max-width: 1250px;
 
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .button {
@@ -89,11 +90,11 @@ body {
   padding-top: 49px;
 }
 
-.hero__header {
+.hero__description {
   flex: 1 1 49%;
 }
 
-.hero__description {
+.hero__content {
   margin-bottom: 53px;
 }
 
@@ -168,29 +169,121 @@ body {
   opacity: 0.7;
 }
 
-.hero__preview {
+.hero__visual {
+  position: relative;
   width: 680px;
   height: 607px;
-}
-
-.bl {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  width: 430px;
-  height: 444px;
-  border-radius: 50%;
-  background: linear-gradient(
-    to bottom,
-    #6C5FBC 0%,
-    #6C5FBC 40%,
-    #6050B3 50%,
-    #53449F 60%,
-    #5144A0 100%
-  );
 }
 
 .hero__image {
-  display: inline-block;
+  max-width: 422px;
+  max-height: 424px;
+}
+
+.hero__visual::after {
+  width: 101px;
+  height: 97px;
+
+  position: absolute;
+  top: 135px;
+  right: 70px;
+  z-index: -1;
+
+  background-image: url('../images/arrow.png');
+  background-repeat: no-repeat;
+
+  content: "";
+}
+
+.hero__dish-card {
+  width: 54%;
+
+  position: absolute;
+  top: 30px;
+  right: 0;
+
+  z-index: 1;
+}
+
+.dish-card {
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+
+  border-radius: 16px;
+  background-color: #ffffff;
+}
+
+.dish-card::after {
+  content: "";
+  position: absolute;
+  width: 42px;
+  height: 28px;
+  background-image: url('../images/illustration.png');
+  background-repeat: no-repeat;
+  top: -36px;
+  left: 100%;
+}
+
+.dish-card__image {
+  margin-right: 18px;
+}
+
+.dish-card__container {
+  width: 100%;
+}
+
+.dish-card__title {
+  font-family: "Poppins SemiBold", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  color: #323142;
+}
+
+.dish-card__status {
+  font-family: "Poppins Medium", sans-serif;
+  font-size: 10px;
+  line-height: 140%;
+  color: #323142;
+}
+
+.dish-card__time {
+  display: block;
+  text-align: right;
+  font-family: "Poppins Medium", sans-serif;
+  font-size: 11px;
+  line-height: 140%;
+  color: #ACADB9;
+}
+
+.hero__graph-card {
+  width: 54%;
+
+  position: absolute;
+  bottom: -20px;
+  left: 8px;
+
+  z-index: 1;
+}
+
+.graph-card {
+  padding: 11px 0;
+}
+
+.hero__graph-card::after {
+  width: 101px;
+  height: 97px;
+
+  position: absolute;
+  bottom: -27px;
+  left: -13px;
+  /* z-index: -1; */
+
+  background-image: url('../images/illustration-b.png');
+  background-repeat: no-repeat;
+
+  content: "";
 }
