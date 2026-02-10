@@ -13,10 +13,21 @@ body {
   padding: 18px 27px;
 
   border-radius: 18px;
+  border: 1.5px solid #6C5FBC;
 
   font-family: "Inter Bold", sans-serif;
   font-size: 18px;
   line-height: 27px;
+}
+
+.button:hover {
+  cursor: pointer;
+
+  background-color: transparent;
+  
+  color: #6C5FBC;
+
+  transition: all 0.3s ease;
 }
 
 .button--filled {
@@ -25,7 +36,6 @@ body {
 }
 
 .button--outlined {
-  border: 1.5px solid #6C5FBC;
   color: #6C5FBC;
 }
 
@@ -77,6 +87,10 @@ body {
   color: #606060;
 }
 
+.menu__link:hover {
+  color: #6C5FBC;
+}
+
 .header__actions {
   margin-left: auto;
 }
@@ -91,11 +105,18 @@ body {
 }
 
 .hero {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+
+  padding-top: 49px;
+  margin-bottom: 85px;
+}
+
+.hero__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding-top: 49px;
 }
 
 .hero__description {
@@ -223,6 +244,8 @@ body {
 
   border-radius: 16px;
   background-color: #ffffff;
+
+  box-shadow: -10px 12px 20px rgb(0, 0, 0, 0.15);
 }
 
 .dish-card::after {
@@ -288,10 +311,66 @@ body {
   position: absolute;
   bottom: -27px;
   left: -13px;
-  /* z-index: -1; */
 
   background-image: url('../images/illustration-b.png');
   background-repeat: no-repeat;
 
   content: "";
+}
+
+.features {
+  position: relative;
+  padding: 49px 0;
+
+  background-color: #5C4EAE;
+}
+
+.features__list {
+  display: flex;
+  justify-content: center;
+}
+
+.features__item {
+  flex: 1;
+
+  padding: 0 66px;
+
+  text-align: center;
+}
+
+.features__item:not(:last-child) {
+  border-right: 1px solid rgba(197, 197, 197, 0.15);
+}
+
+.features__num {
+  font-family: "Public Sans", sans-serif;
+  font-size: 43px;
+  line-height: 54px;
+  color: #FFFFFF;
+}
+
+.features__description {
+  font-family: "Inter Medium", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #C5BFED;
+}
+
+.features__decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+.features__decor-svg {
+  position: absolute;
+}
+
+.features__decor-svg:nth-child(3),
+.features__decor-svg:nth-child(4) {
+  top: 0;
+  right: 0;
 }
