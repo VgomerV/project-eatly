@@ -10,6 +10,9 @@ body {
 }
 
 .button {
+  display: flex;
+  gap: 15px;
+
   padding: 18px 27px;
 
   border-radius: 18px;
@@ -47,6 +50,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
+  margin: 0 auto;
 
   background-color: #F9F9F9;
 }
@@ -92,23 +96,25 @@ body {
 }
 
 .header__actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
   margin-left: auto;
 }
 
 .header__login {
-  margin-right: 18px;
-
   font-family: "Inter Bold", sans-serif;
   font-size: 18px;
   line-height: 27px;
   color: #606060;
 }
 
-.hero {
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
+.main {
+  width: 100%;
+  margin: 0 auto;
+}
 
+.hero {
   padding-top: 49px;
   margin-bottom: 85px;
 }
@@ -373,4 +379,208 @@ body {
 .features__decor-svg:nth-child(4) {
   top: 0;
   right: 0;
+}
+
+.mobile__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 220px;
+
+  padding-top: 103px;
+  padding-bottom: 100px;
+
+  border-bottom: 1px solid #CBCBCB;
+}
+
+.mobile__visual {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.mobile__image {
+  position: relative;
+  width: 304px;
+}
+
+.mobile__image::after {
+  position: absolute;
+  top: -25px;
+  right: -67px;
+
+  width: 52px;
+  height: 62px;
+
+  background-image: url('../images/illustration-mobile.png');
+  background-repeat: no-repeat;
+
+  content: "";
+}
+
+.mobile__content {
+  position: relative;
+  flex: 1;
+}
+
+.mobile__content::after {
+  position: absolute;
+  left: 160px;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url('../images/arrow-left.png');
+  background-repeat: no-repeat;
+
+  content: "";
+}
+
+.mobile__title {
+  margin-bottom: 63px;
+
+  font-family: "Poppins Bold", sans-serif;
+  font-size: 51px;
+  line-height: 58px;
+  color: gray/900;
+}
+
+.mobile__list {
+  margin-bottom: 61px;
+
+  list-style: disc;
+}
+
+.mobile__item {
+  margin-bottom: 28px;
+
+  font-family: "Inter Regular", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: #676767;
+}
+
+.restaurants__container {
+  padding-top: 100px;
+  padding-bottom: 120px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.restaurants__title {
+  margin-bottom: 86px;
+
+  font-family: "Poppins SemiBold", sans-serif;
+  font-size: 45px;
+  line-height: 45px;
+  color: #323142;
+}
+
+.restaurants__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.restaurant__card {
+  display: flex;
+  gap: 59 px;
+
+  padding: 187px 27px 17px 32px;
+  border-radius: 30px;
+
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-position: top;
+
+  box-shadow: 5.95px 71.35px 35.67px 0 rgba(229, 229, 229, 0.7);
+
+  transition: transform 0.3s ease;
+}
+
+.restaurant__card:hover {
+  transform: scale(1.1);
+}
+
+.restaurant__card--healthy {
+  background-image: url("../images/restaurant-bg-1.png");
+}
+
+.restaurant__card--tranding {
+  background-image: url("../images/restaurant-bg-2.png");
+}
+
+.restaurant-card__badge {
+  padding: 2px 8px;
+  border-radius: 6px;
+
+  font-family: "Poppins Regular", sans-serif;
+  font-size: 13px;
+  line-height: 100%;
+}
+
+.restaurant-card__badge--healthy {
+  background-color: #F7EDD0;
+  color: #DAA31A;
+}
+
+.restaurant-card__badge--tranding {
+  background-color: #F7C5BA;
+  color: #FB471D;
+}
+
+.restaurant-card__title {
+  font-family: "Poppins SemiBold", sans-serif;
+  font-size: 26px;
+  line-height: 42px;
+  color: #323142;
+}
+
+.restaurant-card__meta {
+  display: flex;
+  gap: 39px;
+
+  font-family: "Manrope Regular", sans-serif;
+  font-size: 19px;
+  line-height: 26px;
+  color: #8E97A6;
+}
+
+.restaurant-card__rating {
+  display: block;
+  position: relative;
+}
+
+.restaurant-card__rating::before {
+  position: absolute;
+  top: 4px;
+  left: -25px;
+  width: 18px;
+  height: 18px;
+
+  background-image: url("../images/star-purpule.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  content: "";
+}
+
+.restaurant-card__bookmark {
+  display: flex;
+  align-items: end;
+
+  margin-left: 58px;
+}
+
+.restaurant__view-btn {
+  display: block;
+  margin-left: auto;
+  padding-top: 65px;
+
+  font-family: "Poppins Medium", sans-serif;
+  font-size: 20px;
+  line-height: 45px;
+  color: #ACADB9;
 }

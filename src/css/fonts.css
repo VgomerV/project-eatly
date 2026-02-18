@@ -53,6 +53,12 @@
 }
 
 @font-face {
+  font-weight: 400;
+  font-family: "Manrope Regular";
+  src: url("../fonts/manrope/Manrope-Regular.ttf");
+}
+
+@font-face {
   font-weight: 500;
   font-family: "Manrope Medium";
   src: url("../fonts/manrope/Manrope-Medium.ttf");
