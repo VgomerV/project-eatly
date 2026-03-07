@@ -17,4 +17,11 @@ ul, ol {
 button {
   background: none;
   border: none;
+  cursor: pointer;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }

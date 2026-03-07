@@ -71,6 +71,12 @@
 }
 
 @font-face {
+  font-weight: 700;
+  font-family: "Manrope Bold";
+  src: url("../fonts/manrope/Manrope-Bold.ttf");
+}
+
+@font-face {
   font-weight: 800;
   font-family: "Manrope ExtraBold";
   src: url("../fonts/manrope/Manrope-ExtraBold.ttf");
