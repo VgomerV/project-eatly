@@ -1,0 +1,70 @@
+.discount__container {
+  position: relative;
+  max-width: 1214px;
+  margin-bottom: 216px;
+  padding: 64px 0 61px 66px;
+
+  background-color: #6C5FBC;
+  background-image: url(../images/discount/discount-bg.png);
+  background-position: left;
+  border-radius: 30px;
+}
+
+.discount__img {
+  position: absolute;
+  top: 64px;
+  right: 72px;
+}
+
+.discount__title {
+  margin-bottom: 34px;
+  font-family: "Poppins ExtraBold", sans-serif;
+  font-size: 70px;
+  line-height: 100%;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.discount__form {
+  position: relative;
+  width: 440px;
+}
+
+.discount__input {
+  width: 100%;
+  padding: 22px 100px 22px 22px; /* место для кнопки справа */
+  border-radius: 14px;
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.8); /* фон с opacity 80% */
+
+  font-family: "Poppins Regular", sans-serif;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: #878787;
+}
+
+.discount__input:focus {
+  border: 1px solid transparent; /* сохраняет размеры */
+  outline: none;
+}
+
+.discount__form-button {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  bottom: 7px;
+  padding: 0 20px; /* горизонтальный padding для кнопки */
+  background-color: #6C5FBC;
+  border: none;
+  border-radius: 11px;
+  font-size: 16px;
+  cursor: pointer;
+
+  font-family: "Poppins Medium", sans-serif;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: #F7F8FA;
+  text-transform: uppercase;
+}
