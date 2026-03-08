@@ -1,0 +1,62 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin: 0 auto;
+
+  background-color: #F9F9F9;
+}
+
+.header__body {
+  display: flex;
+  align-items: center;
+  gap: 103px;
+
+  padding-top: 48px;
+  padding-bottom: 25px;
+
+  border-bottom: 1px solid #CBCBCB;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.logo__text {
+  font-family: "Poppins SemiBold", sans-serif;
+  font-size: 21.18px;
+  line-height: 130%;
+  color: #6C5FBC;
+}
+
+.menu__list {
+  display: flex;
+  gap: 53px;
+}
+
+.menu__link {
+  font-family: "Inter Medium", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  color: #606060;
+}
+
+.menu__link:hover {
+  color: #6C5FBC;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-left: auto;
+}
+
+.header__login {
+  font-family: "Inter Bold", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  color: #606060;
+}

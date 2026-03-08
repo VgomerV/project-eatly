@@ -1,0 +1,63 @@
+.dishes__title {
+  margin: 0 0 75px 0;
+  font-size: 45px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.dishes-card {
+  position: relative;
+  padding: 26px 17px 14px 0;
+}
+
+.dishes-card__bottom {
+  position: relative;
+  top: -15px;
+  padding: 0 0 0 23px;
+}
+
+.dishes-card__badge {
+  font-size: 12px;
+  line-height: 100%;
+}
+
+.dishes-card__title {
+  font-size: 23px;
+}
+
+.dishes-card__meta {
+  margin-bottom: 13px;
+
+  font-family: "Manrope Regular", sans-serif;
+  font-size: 17px;
+  line-height: 23px;
+  color: #8E97A6;
+} 
+
+.dishes-card__price {
+  display: flex;
+  align-items: center;
+
+  font-family: "Manrope Bold", sans-serif;
+  line-height: 40px;
+}
+
+.dishes-card__num {
+  font-size: 26px;
+  color: #323142;
+}
+
+.dishes-card__cent {
+  font-size: 19px;
+  color: #8E97A6;
+}
+
+.dishes-card__btn {
+  margin-left: auto;
+}
+
+.dishes-card__like {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+}

@@ -1,0 +1,143 @@
+.purchases__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.purchases__header {
+  max-width: 560px;
+}
+
+.purshases__title {
+  margin-bottom: 48px;
+
+  font-family: "Poppins Bold", sans-serif;
+  font-size: 50px;
+  line-height: 58px;
+}
+
+.purchses__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  max-width: 345px;
+}
+
+.purshases__dashboard {
+  max-width: 534px;
+  height: auto;
+
+  padding: 45px 37px;
+
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  box-shadow: 5.95px 71.35px 35.67px 0 rgba(229, 229, 229, 0.7);
+
+  color: #1A202C;
+}
+
+.purshases__dashboard-header {
+  position: relative;
+
+  margin-bottom: 38px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.purchases__dashboard-title {
+  font-family: "Manrope ExtraBold", sans-serif;
+  font-size: 28px;
+  line-height: 135%;
+}
+
+.purshases__select {
+  padding: 13px 50px 13px 19px;
+
+  background-color: #FAFAFA;
+
+  border-style: none;
+  border-radius: 13px;
+
+  font-family: "Manrope SemiBold", sans-serif;
+  font-size: 19px;
+  line-height: 150%;
+}
+
+.select-arrow {
+  position: absolute;
+  right: 19px;
+  top: 15px;
+}
+
+.stat-card {
+  min-width: 458px;
+  padding: 25px;
+
+  border: 1.57px solid #EDF2F7;
+  border-radius: 19px;
+}
+
+.stat-card__header {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.stat-card__text {
+  margin-left: 19px;
+}
+
+.stat-card__title {
+  font-family: "Manrope ExtraBold", sans-serif;
+  font-size: 19px;
+  line-height: 150%;
+  color: #1A202C;
+}
+
+.stat-card__change {
+  font-family: "Manrope Medium", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  color: #A0AEC0;
+}
+
+.stat-card__value {
+  margin-left: auto;
+
+  font-family: "Manrope Medium", sans-serif;
+  font-size: 22px;
+  line-height: 150%;
+  color: #1A202C;
+}
+
+.stat-card__progress {
+  height: 10px;
+  border-radius: 78px;
+}
+
+.stat-card__progress-expense {
+  background-color: #E1DFF1;
+}
+
+.stat-card__progress-vocher {
+  background-color: #FFEED6;
+}
+
+.stat-card__fill {
+  width: 73%;
+  height: inherit;
+  border-radius: inherit;
+}
+
+.stat-card__fill-expense {
+  width: 73%;
+  background-color: #6C5FBC;
+}
+
+
+.stat-card__fill-vocher {
+  width: 60%;
+  background-color: #FBAD18;
+}

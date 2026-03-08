@@ -1,0 +1,119 @@
+.restaurants__title {
+  margin: 0 0 86px 0;
+  font-size: 45px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.top__list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.top__item {
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  box-shadow: 5.95px 71.35px 35.67px 0 rgba(229, 229, 229, 0.7);
+
+  transition: transform 0.3s ease;
+  overflow: hidden
+}
+
+.top__item:hover {
+  transform: scale(1.1);
+}
+
+.restaurant-card__badge {
+  font-family: "Poppins Regular", sans-serif;
+  font-size: 13px;
+  line-height: 100%;
+}
+
+.badge {
+  width: fit-content;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.badge--red {
+  background-color: #F7C5BA;
+  color: #FB471D;
+}
+
+.badge--yellow {
+  background-color: #F7EDD0;
+  color: #DAA31A;
+}
+
+.badge--green {
+  background-color: #b9f0d0 ;
+  color: #309D5B;
+}
+
+.restaurant-card__title {
+  font-size: 26px;
+  line-height: 42px;
+}
+
+.restaurant-card__bottom {
+  display: flex;
+  padding: 11px 27px 18px 32px;
+  align-items: end;
+}
+
+.restaurant-card__meta {
+  display: flex;
+  gap: 38px;
+
+  font-family: "Manrope Regular", sans-serif;
+  font-size: 19px;
+  line-height: 26px;
+  color: #8E97A6;
+}
+
+.restaurant-card__rating {
+  display: block;
+  position: relative;
+}
+
+.restaurant-card__rating::before {
+  position: absolute;
+  top: 4px;
+  left: -25px;
+  width: 18px;
+  height: 18px;
+
+  background-image: url("../images/common/star-purpule.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  content: "";
+}
+
+.restaurant-card__bookmark {
+  display: flex;
+  align-items: end;
+  margin-left: auto;
+
+  width: 40px;
+  height: 40px;
+}
+
+.view-btn {
+  padding-top: 65px;
+  text-align: right;
+}
+
+.view-btn__link {
+  font-family: "Poppins Medium", sans-serif;
+  font-size: 20px;
+  line-height: 45px;
+  color: #ACADB9;
+}
+
+.view-btn__arrow {
+  margin-left: 20px;
+  position: relative;
+  top: 2px;
+}
