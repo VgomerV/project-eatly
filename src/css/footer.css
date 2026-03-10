@@ -47,3 +47,11 @@
   display: flex;
   gap: 54px;
 }
+
+.social-icon {
+  color: #081420;
+}
+
+.social-icon:hover {
+  color: #5146a6;
+}
