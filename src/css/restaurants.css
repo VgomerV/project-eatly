@@ -1,14 +1,12 @@
 .restaurants__title {
   margin: 0 0 86px 0;
-  font-size: 45px;
-  line-height: 25px;
   text-align: center;
 }
 
 .top__list {
   display: flex;
+  flex-wrap: nowrap;
   gap: 30px;
-  flex-wrap: wrap;
 }
 
 .top__item {
@@ -24,10 +22,16 @@
   transform: scale(1.1);
 }
 
+.restaurant-card__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .restaurant-card__badge {
   font-family: "Poppins Regular", sans-serif;
   font-size: 13px;
-  line-height: 100%;
+  line-height: 1;
 }
 
 .badge {
@@ -53,13 +57,11 @@
 
 .restaurant-card__title {
   font-size: 26px;
-  line-height: 42px;
+  line-height: 1.6;
 }
 
 .restaurant-card__bottom {
-  display: flex;
   padding: 11px 27px 18px 32px;
-  align-items: end;
 }
 
 .restaurant-card__meta {
@@ -68,7 +70,7 @@
 
   font-family: "Manrope Regular", sans-serif;
   font-size: 19px;
-  line-height: 26px;
+  line-height: 1.37;
   color: #8E97A6;
 }
 
@@ -108,7 +110,7 @@
 .view-btn__link {
   font-family: "Poppins Medium", sans-serif;
   font-size: 20px;
-  line-height: 45px;
+  line-height: 2.25;
   color: #ACADB9;
 }
 
@@ -116,4 +118,11 @@
   margin-left: 20px;
   position: relative;
   top: 2px;
+}
+
+@media (max-width: 1100px) and (min-width: 1024px) {
+  .restaurant-card__title {
+    font-size: 18px;
+    line-height: 29px;
+  }
 }

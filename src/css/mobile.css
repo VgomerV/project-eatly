@@ -61,11 +61,6 @@
 
 .mobile__title {
   margin-bottom: 63px;
-
-  font-family: "Poppins Bold", sans-serif;
-  font-size: 51px;
-  line-height: 58px;
-  color: gray/900;
 }
 
 .mobile__list {
@@ -79,6 +74,6 @@
 
   font-family: "Inter Regular", sans-serif;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 1.5;
   color: #676767;
 }

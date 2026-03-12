@@ -1,7 +1,5 @@
 .dishes__title {
   margin: 0 0 75px 0;
-  font-size: 45px;
-  line-height: 25px;
   text-align: center;
 }
 
@@ -13,12 +11,13 @@
 .dishes-card__bottom {
   position: relative;
   top: -15px;
+  margin-top: 10px;
   padding: 0 0 0 23px;
 }
 
 .dishes-card__badge {
   font-size: 12px;
-  line-height: 100%;
+  line-height: 1;
 }
 
 .dishes-card__title {
@@ -30,7 +29,7 @@
 
   font-family: "Manrope Regular", sans-serif;
   font-size: 17px;
-  line-height: 23px;
+  line-height: 1.35;
   color: #8E97A6;
 } 
 
@@ -56,8 +55,36 @@
   margin-left: auto;
 }
 
+.dishes-card__svg {
+  width: 100%;
+  height: auto;
+}
+
 .dishes-card__like {
   position: absolute;
   top: 22px;
   right: 20px;
+}
+
+@media (max-width: 1100px) and (min-width: 1024px) {
+  .dishes-card__title{
+    font-size: 16px;  
+  }
+
+  .dishes-card__meta {
+    font-size: 12px;
+  }
+
+  .dishes-card__num {
+    font-size: 18px;
+  }
+
+  .dishes-card__cent {
+    font-size: 13px;
+  }
+
+  .dishes-card__svg {
+    width: 72%;
+    height: auto;
+  }
 }
