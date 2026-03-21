@@ -16,11 +16,13 @@
 }
 
 .dishes-card__badge {
+  margin-bottom: 10px;
   font-size: 12px;
   line-height: 1;
 }
 
 .dishes-card__title {
+  margin-bottom: 5px;
   font-size: 23px;
 }
 
@@ -38,16 +40,17 @@
   align-items: center;
 
   font-family: "Manrope Bold", sans-serif;
-  line-height: 40px;
 }
 
 .dishes-card__num {
   font-size: 26px;
+  line-height: 1.54;
   color: #323142;
 }
 
 .dishes-card__cent {
   font-size: 19px;
+  line-height: 2.11;
   color: #8E97A6;
 }
 
@@ -66,7 +69,7 @@
   right: 20px;
 }
 
-@media (max-width: 1100px) and (min-width: 1024px) {
+@media (max-width: 1100px) and (min-width: 892px) {
   .dishes-card__title{
     font-size: 16px;  
   }
@@ -86,5 +89,12 @@
   .dishes-card__svg {
     width: 72%;
     height: auto;
+  }
+}
+
+@media (max-width: 892px) {
+  .dishes-card:nth-child(n+5) {
+    position: absolute;
+    visibility: hidden;
   }
 }

@@ -120,9 +120,20 @@
   top: 2px;
 }
 
-@media (max-width: 1100px) and (min-width: 1024px) {
+@media (max-width: 1100px) and (min-width: 892px) {
   .restaurant-card__title {
     font-size: 18px;
     line-height: 29px;
+  }
+
+  .restaurant-card__meta {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 892px) {
+  .top__list {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

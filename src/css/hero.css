@@ -18,6 +18,7 @@
 }
 
 .hero__subtitle {
+  display: inline-block;
   position: relative;
   padding-left: 74px;
   margin-bottom: 18px;
@@ -84,7 +85,7 @@
 
 .hero__visual {
   position: relative;
-  width: 680px;
+  max-width: 680px;
   height: 607px;
   display: flex;
   justify-content: center;
@@ -102,7 +103,7 @@
 
   position: absolute;
   top: 135px;
-  right: 70px;
+  left: 90%;
   z-index: -1;
 
   background-image: url('../images/hero/arrow.png');
@@ -112,11 +113,11 @@
 }
 
 .hero__dish-card {
-  width: 54%;
+  width: 78%;
 
   position: absolute;
   top: 30px;
-  right: 0;
+  left: 44%;
 
   z-index: 1;
 }
@@ -129,7 +130,7 @@
   background-image: url('../images/hero/illustration.png');
   background-repeat: no-repeat;
   top: -36px;
-  right: 0;
+  left: 100%;
 }
 
 .hero__graph-card {
@@ -158,4 +159,60 @@
   background-repeat: no-repeat;
 
   content: "";
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .hero__subtitle {
+    font-size: 10px;
+  }
+
+  .hero__text {
+    font-size: 12px;
+  }
+
+  .rate__count {
+    font-size: 11px;
+  }
+
+  .hero__dish-card {
+    width: 58%;
+    left: 35%;
+  }
+
+  .hero__visual::after {
+    left: 75%;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero__container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .hero__description {
+    text-align: center;
+  }
+
+  .hero__text {
+    width: 100%;
+    display: inline;
+    text-align: center;
+  }
+
+  .hero__content {
+    max-width: 100%;
+  }
+
+  .hero__title {
+    text-align: center;
+  }
+
+  .hero__actions, .hero__rate {
+    justify-content: center;
+  }
+
+  .hero__dish-card {
+    width: 50%;
+  }
 }

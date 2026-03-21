@@ -12,7 +12,7 @@
 
   font-family: "Poppins Bold", sans-serif;
   font-size: 50px;
-  line-height: 58px;
+  line-height: 1.16;
 }
 
 .purchses__list {
@@ -48,7 +48,7 @@
 .purchases__dashboard-title {
   font-family: "Manrope ExtraBold", sans-serif;
   font-size: 28px;
-  line-height: 135%;
+  line-height: 1.35;
 }
 
 .purshases__select {
@@ -61,7 +61,7 @@
 
   font-family: "Manrope SemiBold", sans-serif;
   font-size: 19px;
-  line-height: 150%;
+  line-height: 1.5;
 }
 
 .select-arrow {
@@ -92,14 +92,14 @@
 .stat-card__title {
   font-family: "Manrope ExtraBold", sans-serif;
   font-size: 19px;
-  line-height: 150%;
+  line-height: 1.5;
   color: #1A202C;
 }
 
 .stat-card__change {
   font-family: "Manrope Medium", sans-serif;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   color: #A0AEC0;
 }
 
@@ -108,7 +108,7 @@
 
   font-family: "Manrope Medium", sans-serif;
   font-size: 22px;
-  line-height: 150%;
+  line-height: 1.5;
   color: #1A202C;
 }
 
@@ -142,8 +142,34 @@
   background-color: #FBAD18;
 }
 
-@media (max-width: 1100px) and (min-width: 1024px) {
+@media (max-width: 1100px) and (min-width: 892px) {
   .purshases__title {
     font-size: 36px;
+  }
+}
+
+@media (max-width: 892px) {
+  .purchases__container {
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+  }
+
+  .purchases__header {
+    position: relative;
+  }
+
+  .purchases__header::after {
+    position: absolute;
+    top: 90%;
+    right: 25%;
+
+    width: 38px;
+    height: 110px;
+
+    background-image: url('../images/purchases/arrow-down.png');
+    background-repeat: no-repeat;
+
+    content: "";
   }
 }
