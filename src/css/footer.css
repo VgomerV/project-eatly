@@ -57,7 +57,17 @@
   color: #5146a6;
 }
 
-@media (max-width: 892px) {
+
+
+
+
+
+
+
+
+
+/* БЭК АП */
+/* @media (max-width: 892px) {
   .footer__top {
     flex-direction: column;
     justify-content: left ;
@@ -83,4 +93,4 @@
   .social-icon__svg {
     width: 16px;
   }
-}
+} */

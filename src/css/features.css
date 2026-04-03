@@ -1,26 +1,32 @@
 .features {
   position: relative;
-  padding: 49px 0;
+  padding: 39px 0 22px 0;
   width: 100%;
 
   background-color: #5C4EAE;
 }
 
 .features__list {
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 82px;
+
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
 }
 
 .features__item {
-  flex: 1;
-
-  padding: 0 66px;
-
+  width: 206px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(197, 197, 197, 0.15);
   text-align: center;
 }
 
-.features__item:not(:last-child) {
-  border-right: 1px solid rgba(197, 197, 197, 0.15);
+.features__item:last-child {
+  padding-bottom: 0;
+  border: none;
 }
 
 .features__num {
@@ -52,10 +58,31 @@
 
 .features__decor-svg:nth-child(3),
 .features__decor-svg:nth-child(4) {
+  bottom: 0;
   right: 0;
 }
 
-@media (max-width: 1100px) and (min-width: 892px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* БЭК АП */
+/* @media (max-width: 1100px) and (min-width: 892px) {
   .features__num {
     font-size: 31px;
   }
@@ -85,4 +112,12 @@
   .features__decor-svg:nth-child(4) {
     bottom: 0;
   }
-}
+
+  .features__decor-svg:nth-child(1) {
+    width: 375px;
+  }
+
+  .features__decor-svgg {
+    width: 375px;
+  }
+} */

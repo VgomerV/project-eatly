@@ -69,7 +69,25 @@
   text-transform: uppercase;
 }
 
-@media (max-width: 892px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* БЭК АП */
+/* @media (max-width: 892px) {
   .discount__container {
     padding: 35px 27px 95px 27px;
   }
@@ -96,4 +114,4 @@
     top: 75%;
     left: 28%;
   }
-}
+} */
