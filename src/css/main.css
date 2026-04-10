@@ -1,3 +1,11 @@
+html {
+  min-height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+}
+
 body, 
 header,
 main,
@@ -15,8 +23,8 @@ h1 {
 
 h2 {
   font-family: "Poppins Bold", sans-serif;
-  font-size: 50px;
-  line-height: 1.16;
+  font-size: 30px;
+  line-height: 1.13;
   color: gray/900;
 }
 
@@ -27,48 +35,75 @@ h3 {
   color: #323142;
 }
 
-.container {
-  max-width: 1250px;
-  margin: 0 auto;
-  padding: 0 31px;
-  width: 100%;
+h4 {
+  font-family: "Poppins Bold", sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #323142;
 }
 
-.container--padding {
-  padding-top: 100px;
-  padding-bottom: 120px;
+.container {
+  max-width: 1250px;
+  width: 100%;
+
+  margin: 0 auto;
+  padding: 0 31px;
+}
+
+.container--border {
   border-bottom: 1px solid #CBCBCB;
 }
 
 .button {
   padding: 14px 24px;
 
-  border-radius: 13px;
-  border: 1.5px solid #6C5FBC;
-
   font-family: "Inter Bold", sans-serif;
   font-size: 13px;
   line-height: 1;
   letter-spacing: 1%;
+
+  border-radius: 13px;
+  border: 1.5px solid #6C5FBC;
 }
 
 .button:hover {
   cursor: pointer;
 
-  background-color: transparent;
-  
   color: #6C5FBC;
+
+  background-color: transparent;
 
   transition: all 0.3s ease;
 }
 
 .button--filled {
-  background-color: #6C5FBC;
   color: #F9F9F9;
+
+  background-color: #6C5FBC;
 }
 
 .button--outlined {
   color: #6C5FBC;
+}
+
+.view-btn {
+  margin-bottom: 66px;
+
+  text-align: right;
+}
+
+.view-btn__link {
+  font-family: "Poppins Medium", sans-serif;
+  font-size: 20px;
+  line-height: 2.25;
+  color: #ACADB9;
+}
+
+.view-btn__arrow {
+  position: relative;
+  top: 2px;
+
+  margin-left: 20px;
 }
 
 .highlight {
@@ -77,12 +112,14 @@ h3 {
 
 .main {
   width: 100%;
+
   margin: 0 auto;
 }
 
 .dish-card {
   display: flex;
   align-items: center;
+
   padding: 2px 11px 2px 7px;
 
   border-radius: 8px;
@@ -106,7 +143,7 @@ h3 {
 
 .dish-card__time {
   display: block;
-  /* text-align: right; */
+
   font-family: "Poppins Medium", sans-serif;
   line-height: 1.4;
   color: #ACADB9;
@@ -116,85 +153,3 @@ h3 {
   font-family: "Poppins SemiBold", sans-serif;
   color: #323142;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* БЭК АП */
-/* @media (min-width: 768px) {
-  h1 {
-    font-size: 53px;
-  }
-}
-
-@media (min-width: 1248px) {
-  h1 {
-    font-size: 75px;
-  }
-}
-
-@media (max-width: 1100px) and (min-width: 892px) {
-  h2 {
-    font-size: 36px;
-  }
-
-  h3 {
-    font-size: 32px;
-  }
-
-  .button {
-    font-size: 12px;
-  }
-
-  .dish-card__title {
-    font-size: 11px;
-  }
-
-  .dish-card__status {
-    font-size: 7px;
-  }
-
-  .dish-card__time {
-    font-size: 8px;
-  }
-}
-
-@media (max-width: 892px) {
-  h2 {
-    font-size: 34px;
-  }
-
-  h3 {
-    font-size: 30px;
-  }
-
-  .button {
-    font-size: 13px;
-  }
-
-  .dish-card__title {
-    font-size: 7px;
-  }
-
-  .dish-card__status {
-    font-size: 5px;
-  }
-
-  .dish-card__time {
-    font-size: 5px;
-  }
-} */

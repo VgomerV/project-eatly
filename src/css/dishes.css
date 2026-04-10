@@ -1,55 +1,97 @@
+.dishes {
+  margin-bottom: 85px;
+}
+
+.dishes__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 21px;
+
+  margin-bottom: 60px;
+}
+
+.dishes_item {
+  overflow: hidden;
+
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  box-shadow: 5.95px 71.35px 35.67px 0 rgba(229, 229, 229, 0.7);
+
+  transition: transform 0.3s ease;
+}
+
+.dishes_item:hover {
+  transform: scale(1.1);
+}
+
+.dishes-card__image {
+  width: 121px;
+  height: auto;
+}
+
 .dishes__title {
   margin: 0 0 75px 0;
+
   text-align: center;
 }
 
 .dishes-card {
   position: relative;
-  padding: 26px 17px 14px 0;
+
+  width: 146px;
+
+  padding-top: 17px;
+}
+
+.dishes-card__image {
+  display: block;
+
+  margin: 0 auto;
 }
 
 .dishes-card__bottom {
   position: relative;
-  top: -15px;
-  margin-top: 10px;
-  padding: 0 0 0 23px;
+
+  padding: 0 18px 20px 15px;
 }
 
 .dishes-card__badge {
   margin-bottom: 10px;
-  font-size: 12px;
+
+  font-size: 7px;
   line-height: 1;
 }
 
 .dishes-card__title {
   margin-bottom: 5px;
-  font-size: 23px;
+
+  font-size: 15px;
 }
 
 .dishes-card__meta {
-  margin-bottom: 13px;
+  margin-bottom: 5px;
 
   font-family: "Manrope Regular", sans-serif;
-  font-size: 17px;
+  font-size: 11px;
   line-height: 1.35;
   color: #8E97A6;
 } 
 
 .dishes-card__price {
   display: flex;
-  align-items: center;
 
   font-family: "Manrope Bold", sans-serif;
 }
 
 .dishes-card__num {
-  font-size: 26px;
+  font-size: 17px;
   line-height: 1.54;
   color: #323142;
 }
 
 .dishes-card__cent {
-  font-size: 19px;
+  font-size: 12px;
   line-height: 2.11;
   color: #8E97A6;
 }
@@ -65,45 +107,6 @@
 
 .dishes-card__like {
   position: absolute;
-  top: 22px;
-  right: 20px;
+  top: 17px;
+  right: 15px;
 }
-
-
-
-
-
-
-
-
-
-/* БЭК АП */
-/* @media (max-width: 1100px) and (min-width: 892px) {
-  .dishes-card__title{
-    font-size: 16px;  
-  }
-
-  .dishes-card__meta {
-    font-size: 12px;
-  }
-
-  .dishes-card__num {
-    font-size: 18px;
-  }
-
-  .dishes-card__cent {
-    font-size: 13px;
-  }
-
-  .dishes-card__svg {
-    width: 72%;
-    height: auto;
-  }
-}
-
-@media (max-width: 892px) {
-  .dishes-card:nth-child(n+5) {
-    position: absolute;
-    visibility: hidden;
-  }
-} */

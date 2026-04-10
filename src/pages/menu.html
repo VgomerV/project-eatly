@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/src/css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
   <title>Eatly</title>
 </head>
 <body>
@@ -11,7 +11,7 @@
     <div class="container">
       <div class="header__body">
         <a class="logo" href="#">
-          <img class="logo__img" src="src/images/header/logo.png" alt="Логотип eatly с изображением вилки и ложки в квадрате">
+          <img class="logo__img" src="../images/header/logo.png" alt="Логотип eatly с изображением вилки и ложки в квадрате">
         </a>
         <div class="header__controls">
           <input type="checkbox" id="burger-toggle">
@@ -28,7 +28,7 @@
             </label>
             <ul class="menu__list">
               <li class="menu__item">
-                <a class="menu__link" href="src/pages/menu.html">Menu</a>
+                <a class="menu__link" href="#">Menu</a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="#">Blog</a>
@@ -56,120 +56,16 @@
     </div>
   </header>
   <main class="main">
-    <section class="hero">
-      <div class="container hero__container">
-        <div class="hero__description">
-          <div class="hero__content">
-            <p class="hero__subtitle">over 1000 users</p>
-            <h1 class="hero__title">
-              Enjoy Foods All Over The <span class="highlight">World</span>
-            </h1>
-            <p class="hero__text">
-              EatLy help you set saving goals, earn cash back offers, Go to disclaimer for more details and get paychecks up to two days early. Get a <span class="highlight">$20 bonus</span>.
-            </p>
-          </div>
-          <div class="hero__actions">
-            <a class="button button--filled" href="#">Get Started</a>
-            <a class="button button--outlined" href="#">Go Pro</a>
-          </div>
-          <div class="hero__rate rate">
-            <img class="rate__status" src="src/images/common/trustpilot.png" alt="Зеленая звезда и рядом надпись Trustpilot">
-            <div class="rate__stars">
-              <div class="stars__container">
-                <img src="src/images/common/star.png" alt="Желтая звезда">
-                <img src="src/images/common/star.png" alt="Желтая звезда">
-                <img src="src/images/common/star.png" alt="Желтая звезда">
-                <img src="src/images/common/star.png" alt="Желтая звезда">
-                <img src="src/images/common/star.png" alt="Желтая звезда">
-              </div>
-              <span class="rate__count">4900+</span>
-            </div>
-          </div>
-        </div>
-        <div class="hero__visual">
-          <img class="hero__image" src="src/images/hero/hero-image.png" alt="">
-          <div class="dish-card hero-card">
-            <img class="hero-card__image" src="src/images/hero/mini-img.png" alt="">
-            <div class="hero-card__container">
-              <p class="dish-card__title hero-card__title">Chicken Hell</p>
-              <span class="dish-card__status hero-card__status">On The Way</span>
-              <time class="dish-card__time hero-card__time">3:09 PM</time>
-            </div>
-          </div>
-          <div class="graph-card hero__graph-card">
-            <img class="graph-card__image" src="src/images/hero/graph.png" alt="">
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="features">
+    <section class="discount">
       <div class="container">
-        <ul class="features__list">
-          <li class="features__item">
-            <span class="features__num">10K+</span>
-            <p class="features__description">
-              Satisfied Costumers All Great Over The World 
-            </p>
-          </li>
-          <li class="features__item">
-            <span class="features__num">4M</span>
-            <p class="features__description">
-              Healthy Dishes Sold Including Milk Shakes Smooth 
-            </p>
-          </li>
-          <li class="features__item">
-            <span class="features__num">99.99%</span>
-            <p class="features__description">
-              Reliable Customer SupportWe Provide Great Experiences
-            </p>
-          </li>
-        </ul>
-        <div class="features__decor">
-          <div class="features__decor-svg">
-            <picture>
-              <source srcset="desctop" media="(min-width: 1024px)">
-              <img src="src/images/features/top-decor-l-min.svg" alt="">
-            </picture>
+        <div class="discount__container discount__container--menu-page">
+          <img class="discount__img discount__img--menu-page" src="../images/discount/food-img-discount.png" alt="">
+          <div class="discount__content">
+            <h3 class="discount__title discount__title--menu-page">
+              50% off
+            </h3>
+            <p class="discount__text">weekend</p>
           </div>
-          <div class="features__decor-svg">
-            <picture>
-              <source srcset="desctop" media="(min-width: 1024px)">
-              <img src="src/images/features/top-decor-r-min.svg" alt="">
-            </picture>
-          </div>
-          <div class="features__decor-svg">
-            <picture>
-              <source srcset="desctop" media="(min-width: 1024px)">
-              <img src="src/images/features/bottom-decor-l-min.svg" alt="">
-            </picture>
-          </div>
-          <div class="features__decor-svg">
-            <picture>
-              <source srcset="desctop" media="(min-width: 1024px)">
-              <img src="src/images/features/bottom-decor-r-min.svg" alt="">
-            </picture>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="mobile">
-      <div class="container mobile__container">
-        <div class="mobile__visual">
-          <img class="mobile__image" src="src/images/mobile/mobile-image.png" width="304" height="609" alt="Телефон iphone 13 с приложением Eatly на экране">
-        </div>
-        <div class="mobile__content">
-          <h2 class="mobile__title">Premium <span class="highlight">Quality</span> For Your Health</h2>
-          <ul class="mobile__list">
-            <li class="mobile__item">Premium quality food is made with ingredients that are packed with essential vitamins, minerals.</li>
-            <li class="mobile__item">These foods promote overall wellness by supporst healthy digestion and boosting immunity</li>
-          </ul>
-          <button class="button button--filled button-mobile">
-            Download
-            <svg class="button__arrow" width="18" height="18" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5.64453 13.5469H21.4487" stroke="currentColor" stroke-width="2.25773" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M13.5459 5.64453L21.448 13.5466L13.5459 21.4487" stroke="currentColor" stroke-width="2.25773" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
         </div>
       </div>
     </section>
@@ -180,7 +76,7 @@
         </h2>
         <ul class="restaurants__list">
           <li class="restaurant-card restaurant__item">
-            <img src="src/images/restaurants/restaurant-bg-1.jpg" alt="The Chicken King" class="restaurant-card__image">
+            <img src="../images/restaurants/restaurant-bg-1.jpg" alt="The Chicken King" class="restaurant-card__image">
             <div class="restaurant-card__bottom">
               <div class="restaurant-card__info">
                 <div class="restaurant-card__badge badge badge--yellow">Healthy</div>
@@ -199,7 +95,7 @@
             </div>
           </li>
           <li class="restaurant-card restaurant__item">
-            <img src="src/images/restaurants/restaurant-bg-2.jpg" alt="The Burger King" class="restaurant-card__image">
+            <img src="../images/restaurants/restaurant-bg-2.jpg" alt="The Burger King" class="restaurant-card__image">
             <div class="restaurant-card__bottom">
               <div class="restaurant-card__info">
                 <div class="restaurant-card__badge badge badge--red">Trending</div>
@@ -218,7 +114,7 @@
             </div>
           </li>
           <li class="restaurant-card restaurant__item">
-            <img src="src/images/restaurants/restaurant-bg-1.jpg" alt="The Chicken King" class="restaurant-card__image">
+            <img src="../images/restaurants/restaurant-bg-1.jpg" alt="The Chicken King" class="restaurant-card__image">
             <div class="restaurant-card__bottom">
               <div class="restaurant-card__info">
                 <div class="restaurant-card__badge badge badge--yellow">Healthy</div>
@@ -255,7 +151,7 @@
         </h2>
         <ul class="dishes__list">
           <li class="dishes-card dishes_item">
-            <img src="src/images/dishes/dishes-food-image-1.png" alt="The Chicken King" class="dishes-card__image">
+            <img src="../images/dishes/dishes-food-image-1.png" alt="The Chicken King" class="dishes-card__image">
             <div class="dishes-card__bottom">
               <div class="dishes-card__info">
                 <div class="dishes-card__badge badge badge--yellow">Healthy</div>
@@ -286,7 +182,7 @@
             </button>
           </li>
           <li class="dishes-card dishes_item">
-            <img src="src/images/dishes/dishes-food-image-1.png" alt="The Chicken King" class="dishes-card__image">
+            <img src="../images/dishes/dishes-food-image-1.png" alt="The Chicken King" class="dishes-card__image">
             <div class="dishes-card__bottom">
               <div class="dishes-card__info">
                 <div class="dishes-card__badge badge badge--red">Trending</div>
@@ -317,7 +213,7 @@
             </button>
           </li>
           <li class="dishes-card dishes_item">
-            <img src="src/images/dishes/dishes-food-image-1.png" alt="The Chicken King" class="dishes-card__image">
+            <img src="../images/dishes/dishes-food-image-1.png" alt="The Chicken King" class="dishes-card__image">
             <div class="dishes-card__bottom">
               <div class="dishes-card__info">
                 <div class="dishes-card__badge badge badge--green">Supreme</div>
@@ -348,7 +244,7 @@
             </button>
           </li>
           <li class="dishes-card dishes_item">
-            <img src="src/images/dishes/dishes-food-image-1.png" alt="The Chicken King" class="dishes-card__image">
+            <img src="../images/dishes/dishes-food-image-1.png" alt="The Chicken King" class="dishes-card__image">
             <div class="dishes-card__bottom">
               <div class="dishes-card__info">
                 <div class="dishes-card__badge badge badge--yellow">Healthy</div>
@@ -379,7 +275,7 @@
             </button>
           </li>
           <li class="dishes-card dishes_item">
-            <img src="src/images/dishes/dishes-food-image-1.png" alt="The Chicken King" class="dishes-card__image">
+            <img src="../images/dishes/dishes-food-image-1.png" alt="The Chicken King" class="dishes-card__image">
             <div class="dishes-card__bottom">
               <div class="dishes-card__info">
                 <div class="dishes-card__badge badge badge--red">Trending</div>
@@ -421,185 +317,11 @@
         </div>
       </div>
     </section>
-    <section class="purchases">
-      <div class="container container--border purchases__container">
-        <div class="purchases__header">
-          <h2 class="purshases__title">Control <span class="highlight">Purchases</span> Via Dashboard</h1>
-          <ul class="purchses__list">
-            <li class="purchases__card">
-              <img class="purchases-card__image" src="src/images/hero/mini-img.png" alt="">
-              <div class="purchases-card__container">
-                <h4 class="purchases-card__title">Chicken Hell</h4>
-                <span class="purchases-card__status">On The Way</span>
-                <time class="purchases-card__time">3:09 PM</time>
-              </div>
-            </li>
-            <li class="purchases__card">
-              <img class="purchases-card__image" src="src/images/purchases/mini-img-2.png" alt="">
-              <div class="purchases-card__container">
-                <h4 class="purchases-card__title">Swe Dish</h4>
-                <span class="purchases-card__status">Delivered</span>
-                <time class="purchases-card__time">Yesterday</time>
-              </div>
-            </li>
-            <li class="purchases__card">
-              <img class="purchases-card__image" src="src/images/purchases/mini-img-3.png" alt="">
-              <div class="purchases-card__container">
-                <h4 class="purchases-card__title">Fish Hell Veg</h4>
-                <span class="purchases-card__status">Cancelled</span>
-                <time class="purchases-card__time">Yesterday</time>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="purshases__dashboard">
-          <div class="purshases__dashboard-header">
-            <h3 class="purchases__dashboard-title">Purchases</h3>
-            <div class="purchases__menu">
-              <select name="purshases-select" class="purshases__select">
-                <option value="month">This month</option>
-                <option value="week">This week</option>
-                <option value="year">This yaer</option>
-              </select>
-              <svg class="select-arrow" width="15" height="15" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.28223 9.42334L12.5646 15.7057L18.8469 9.42334" stroke="#1A202C" stroke-width="2.35588" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-          </div>
-          <div class="stat-cards">
-              <div class="stat-card">
-              <div class="stat-card__header">
-                <svg width="30" height="30" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="50.2588" height="50.2588" rx="25.1294" fill="#F4F0FF"/>
-                  <path d="M25.8202 14.4161L25.7888 14.4893L22.7523 21.5361H19.7682C19.0562 21.5361 18.3756 21.6826 17.7578 21.9444L19.5902 17.5677L19.632 17.463L19.7053 17.2955C19.7263 17.2326 19.7472 17.1698 19.7786 17.1175C21.1503 13.9449 22.6999 13.2224 25.8202 14.4161Z" stroke="#936DFF" stroke-width="1.57059" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M31.4635 21.7454C30.9923 21.5988 30.4897 21.536 29.9871 21.536H22.752L25.7884 14.4893L25.8198 14.416C25.9769 14.4684 26.1235 14.5417 26.2805 14.6045L28.5945 15.5783C29.8824 16.1123 30.7829 16.6672 31.3274 17.3373C31.4321 17.463 31.5158 17.5781 31.5891 17.7143C31.6834 17.8608 31.7567 18.0074 31.7985 18.1645C31.8404 18.2587 31.8718 18.353 31.8928 18.4367C32.1755 19.3163 32.008 20.3947 31.4635 21.7454Z" stroke="#936DFF" stroke-width="1.57059" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M35.098 26.6463V28.688C35.098 28.8974 35.0876 29.1069 35.0771 29.3163C34.8782 32.9705 32.8364 34.8133 28.9623 34.8133H20.7952C20.5439 34.8133 20.2926 34.7924 20.0518 34.761C16.7222 34.5411 14.9422 32.7611 14.7223 29.4314C14.6909 29.1906 14.6699 28.9393 14.6699 28.688V26.6463C14.6699 24.5417 15.9473 22.7303 17.7692 21.945C18.3975 21.6832 19.0676 21.5366 19.7796 21.5366H29.9989C30.5119 21.5366 31.0145 21.6099 31.4752 21.746C33.5589 22.3847 35.098 24.3323 35.098 26.6463Z" stroke="#936DFF" stroke-width="1.57059" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M19.5899 17.5679L17.7575 21.9446C15.9356 22.7299 14.6582 24.5413 14.6582 26.6459V23.578C14.6582 20.6043 16.7733 18.1228 19.5899 17.5679Z" stroke="#936DFF" stroke-width="1.57059" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M35.0955 23.5769V26.6448C35.0955 24.3412 33.5668 22.3832 31.4727 21.755C32.0171 20.3938 32.1742 19.3258 31.9124 18.4358C31.8915 18.3416 31.8601 18.2473 31.8182 18.1636C33.7657 19.1688 35.0955 21.2315 35.0955 23.5769Z" stroke="#936DFF" stroke-width="1.57059" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <div class="stat-card__text">
-                  <h4 class="stat-card__title">Expense</h3>
-                  <p class="stat-card__change">Increased by 10%</p>
-                </div>
-                <div class="stat-card__value">$409.00</div>
-              </div>
-              <div class="stat-card__progress stat-card__progress-expense">
-                <div class="stat-card__fill stat-card__fill-expense" style="width: 73%;"></div>
-              </div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-card__header">
-                <svg width="30" height="30" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="50.2588" height="50.2588" rx="25.1294" fill="#F2FDF6"/>
-                  <path d="M30.3641 34.8156H19.8935C16.7523 34.8156 14.6582 33.245 14.6582 29.5803V22.2509C14.6582 18.5862 16.7523 17.0156 19.8935 17.0156H30.3641C33.5053 17.0156 35.5994 18.5862 35.5994 22.2509V29.5803C35.5994 33.245 33.5053 34.8156 30.3641 34.8156Z" stroke="#22C55E" stroke-width="1.57059" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M25.1295 29.0563C26.8643 29.0563 28.2706 27.6499 28.2706 25.9151C28.2706 24.1803 26.8643 22.7739 25.1295 22.7739C23.3946 22.7739 21.9883 24.1803 21.9883 25.9151C21.9883 27.6499 23.3946 29.0563 25.1295 29.0563Z" stroke="#22C55E" stroke-width="1.57059" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M18.3242 23.2979V28.5331" stroke="#22C55E" stroke-width="1.57059" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M31.9346 23.2979V28.5331" stroke="#22C55E" stroke-width="1.57059" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <div class="stat-card__text">
-                  <h4 class="stat-card__title">Vocher Usage</h3>
-                  <p class="stat-card__change">Increased By 5%</p>
-                </div>
-                <div class="stat-card__value">$45.78</div>
-              </div>
-              <div class="stat-card__progress stat-card__progress-vocher">
-                <div class="stat-card__fill stat-card__fill-vocher" style="width: 60%;"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="review">
-      <div class="container review__container">
-        <h2 class="review__title">
-          <span class="highlight">Customer</span>
-          Say
-        </h2>
-        <div class="review-slider">
-          <div class="review-slider__viewport">
-            <div class="review-slider__track">
-              <article class="review-card review-card--large">
-                <div class="review-card__header">
-                  <img class="review-card__avatar" src="src/images/common/user-avatar.png" alt="" width="60" height="60">
-                  <div class="review-card__user">
-                    <span class="review-card__name">Alexander R.</span>
-                    <span class="review-card__since">01 Year With Us</span>
-                  </div>
-                  <svg class="review-card__quote" width="35" height="27" viewBox="0 0 59 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M36.797 44.2511C33.6916 38.2474 32.139 31.7262 32.139 24.6874C32.139 17.5452 34.0281 11.645 37.8062 6.98701C41.5844 2.32901 47.4586 0 55.429 0V9.78182C52.6342 9.78182 50.5898 10.4029 49.2959 11.645C48.002 12.8872 47.3551 15.2679 47.3551 18.7873V20.34H58.6896V44.2511H36.797ZM4.65799 44.2513C1.55267 38.2477 0 31.7264 0 24.6877C0 17.5454 1.88908 11.6452 5.66723 6.98723C9.44538 2.32923 15.3196 0.000219731 23.29 0.000219731V9.78204C20.4952 9.78204 18.4508 10.4031 17.157 11.6452C15.8631 12.8874 15.2161 15.2681 15.2161 18.7875V20.3402H26.5506V44.2513H4.65799Z" fill="#DADADA"/>
-                  </svg>
-                </div>
-                <p class="review-card__text">
-                  " Online invoice payment helps companies save time, are faster and save maximum effort for the clients and save maximum effort. Online invoice payment helps companies save time "
-                </p>
-                <div class="review-card__stars">
-                  <img src="src/images/common/star.png" alt="star" class="review-card__star">
-                  <img src="src/images/common/star.png" alt="star" class="review-card__star">
-                  <img src="src/images/common/star.png" alt="star" class="review-card__star">
-                  <img src="src/images/common/star.png" alt="star" class="review-card__star">
-                  <img src="src/images/common/star.png" alt="star" class="review-card__star">
-                </div>
-              </article>
-              <div class="review-slider__right">
-                <div class="review-slider__right-viewport">
-                  <div class="review-slider__right-track">
-                    <article class="review-card review-card--small">
-                      <p class="review-card__text">
-                        " Online invoice payment helps companies save time, are faster and save maximum effort for the clients and save maximum effort. Online invoice payment helps companies save time "
-                      </p>
-                      <div class="review-card__stars">
-                        <img src="src/images/common/star.png" alt="star" class="review-card__star">
-                        <img src="src/images/common/star.png" alt="star" class="review-card__star">
-                        <img src="src/images/common/star.png" alt="star" class="review-card__star">
-                        <img src="src/images/common/star.png" alt="star" class="review-card__star">
-                        <img src="src/images/common/star.png" alt="star" class="review-card__star">
-                      </div>
-                    </article>
-                    <article class="review-card review-card--small">
-                      <p class="review-card__text">
-                        " Online invoice payment helps companies save time, are faster and save maximum effort for the clients and save maximum effort. Online invoice payment helps companies save time "
-                      </p>
-                      <div class="review-card__stars">
-                        <img src="src/images/common/star.png" alt="star" class="review-card__star">
-                        <img src="src/images/common/star.png" alt="star" class="review-card__star">
-                        <img src="src/images/common/star.png" alt="star" class="review-card__star">
-                        <img src="src/images/common/star.png" alt="star" class="review-card__star">
-                        <img src="src/images/common/star.png" alt="star" class="review-card__star">
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="review-slider__scrollbar">
-            <div class="review-slider__scrollbar-fill"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="discount">
-      <div class="container">
-        <div class="discount__container">
-          <img class="discount__img" src="src/images/discount/food-img-discount.png" alt="">
-          <div class="discount__content">
-            <h3 class="discount__title">
-              GET 50%
-            </h3>
-            <div class="discount__form">
-              <input type="email" placeholder="Email Address" class="discount__input">
-              <button class="discount__form-button">Subscribe</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
   <footer class="footer">
     <div class="container footer__container">
       <a class="logo footer__logo" href="#">
-        <img class="logo__img" src="src/images/header/logo.png" alt="Логотип eatly с изображением вилки и ложки в квадрате">
+        <img class="logo__img" src="../images/header/logo.png" alt="Логотип eatly с изображением вилки и ложки в квадрате">
       </a>
       <ul class="footer__social">
         <li class="footer__social-item">

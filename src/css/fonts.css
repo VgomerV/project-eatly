@@ -1,95 +1,95 @@
 @font-face {
   font-weight: 400;
   font-family: "Poppins Regular";
-  src: url("../fonts/poppins/Poppins-Regular.ttf");
+  src: url("src/fonts/poppins/Poppins-Regular.ttf");
 }
 
 @font-face {
   font-weight: 500;
   font-family: "Poppins Medium";
-  src: url("../fonts/poppins/Poppins-Medium.ttf");
+  src: url("src/fonts/poppins/Poppins-Medium.ttf");
 }
 
 @font-face {
   font-weight: 600;
   font-family: "Poppins SemiBold";
-  src: url("../fonts/poppins/Poppins-SemiBold.ttf");
+  src: url("src/fonts/poppins/Poppins-SemiBold.ttf");
 }
 
 @font-face {
   font-weight: 700;
   font-family: "Poppins Bold";
-  src: url("../fonts/poppins/Poppins-Bold.ttf");
+  src: url("src/fonts/poppins/Poppins-Bold.ttf");
 }
 
 @font-face {
   font-weight: 800;
   font-family: "Poppins ExtraBold";
-  src: url("../fonts/poppins/Poppins-ExtraBold.ttf");
+  src: url("src/fonts/poppins/Poppins-ExtraBold.ttf");
 }
 
 @font-face {
   font-weight: 400;
   font-family: "Inter Regular";
-  src: url("../fonts/inter/Inter_18pt-Regular.ttf");
+  src: url("src/fonts/inter/Inter_18pt-Regular.ttf");
 }
 
 @font-face {
   font-weight: 500;
   font-family: "Inter Medium";
-  src: url("../fonts/inter/Inter_18pt-Medium.ttf");
+  src: url("src/fonts/inter/Inter_18pt-Medium.ttf");
 }
 
 @font-face {
   font-weight: 700;
   font-family: "Inter Bold";
-  src: url("../fonts/inter/Inter_18pt-Bold.ttf");
+  src: url("src/fonts/inter/Inter_18pt-Bold.ttf");
 }
 
 @font-face {
   font-weight: 500;
   font-family: "Quicksand";
-  src: url("../fonts/quicksand/Quicksand-Medium.ttf");
+  src: url("src/fonts/quicksand/Quicksand-Medium.ttf");
 }
 
 @font-face {
   font-weight: 400;
   font-family: "Manrope Regular";
-  src: url("../fonts/manrope/Manrope-Regular.ttf");
+  src: url("src/fonts/manrope/Manrope-Regular.ttf");
 }
 
 @font-face {
   font-weight: 500;
   font-family: "Manrope Medium";
-  src: url("../fonts/manrope/Manrope-Medium.ttf");
+  src: url("src/fonts/manrope/Manrope-Medium.ttf");
 }
 
 @font-face {
   font-weight: 600;
   font-family: "Manrope SemiBold";
-  src: url("../fonts/manrope/Manrope-SemiBold.ttf");
+  src: url("src/fonts/manrope/Manrope-SemiBold.ttf");
 }
 
 @font-face {
   font-weight: 700;
   font-family: "Manrope Bold";
-  src: url("../fonts/manrope/Manrope-Bold.ttf");
+  src: url("src/fonts/manrope/Manrope-Bold.ttf");
 }
 
 @font-face {
   font-weight: 800;
   font-family: "Manrope ExtraBold";
-  src: url("../fonts/manrope/Manrope-ExtraBold.ttf");
+  src: url("src/fonts/manrope/Manrope-ExtraBold.ttf");
 }
 
 @font-face {
   font-weight: 500;
   font-family: "Plus Jakarta Sans";
-  src: url("../fonts/plus-jakarta-sans/PlusJakartaSans-Medium.ttf");
+  src: url("src/fonts/plus-jakarta-sans/PlusJakartaSans-Medium.ttf");
 }
 
 @font-face {
   font-weight: 700;
   font-family: "Public Sans";
-  src: url("../fonts/public-sans/PublicSans-Bold.ttf");
+  src: url("src/fonts/public-sans/PublicSans-Bold.ttf");
 }

@@ -1,78 +1,154 @@
 .purchases__container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+
+  margin-bottom: 90px;
+  padding-bottom: 105px;
 }
 
 .purchases__header {
   max-width: 560px;
+
+  margin-bottom: 100px;
 }
 
 .purshases__title {
-  margin-bottom: 48px;
-
-  font-family: "Poppins Bold", sans-serif;
-  font-size: 50px;
-  line-height: 1.16;
+  margin-bottom: 27px;
 }
 
 .purchses__list {
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
+}
 
-  max-width: 345px;
+.purchses__list::after {
+  content: "";
+
+  position: absolute;
+  top: 80%;
+  left: 80%;
+
+  width: 39px;
+  height: 112px;
+
+  background-image: url('src/images/purchases/arrow-down.png');
+  background-repeat: no-repeat;
+}
+
+.purchases__card {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  max-width: 228px;
+  padding: 2px 12px 6px 12px;
+
+  font-family: "Poppins Medium", sans-serif;
+  font-size: 8px;
+  line-height: 1.4;
+
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 5.95px 71.35px 35.67px 0 rgba(229, 229, 229, 0.7);
+}
+
+.purchases-card__image {
+  width: 51px;
+  height: auto;
+}
+
+.purchases-card__title {
+  margin-bottom: 2px;
+}
+
+.purchases-card__time {
+  display: inline;
+
+  margin-left: 110px;
+
+  color: #ACADB9;
 }
 
 .purshases__dashboard {
   max-width: 534px;
   height: auto;
 
-  padding: 45px 37px;
+  padding: 30px 22px;
+
+  color: #1A202C;
 
   background-color: #FFFFFF;
   border-radius: 30px;
   box-shadow: 5.95px 71.35px 35.67px 0 rgba(229, 229, 229, 0.7);
-
-  color: #1A202C;
 }
 
 .purshases__dashboard-header {
   position: relative;
 
-  margin-bottom: 38px;
-
   display: flex;
   justify-content: space-between;
+
+  margin-bottom: 26px;
 }
 
 .purchases__dashboard-title {
   font-family: "Manrope ExtraBold", sans-serif;
-  font-size: 28px;
+  font-size: 17px;
   line-height: 1.35;
 }
 
-.purshases__select {
-  padding: 13px 50px 13px 19px;
+.purchases__menu {
+  position: relative;
+
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  padding: 7px 11px 7px 11px;
 
   background-color: #FAFAFA;
-
   border-style: none;
   border-radius: 13px;
+}
+.purshases__select {
+  width: 100%;
+
+  padding-right: 25px;
 
   font-family: "Manrope SemiBold", sans-serif;
-  font-size: 19px;
+  font-size: 11px;
   line-height: 1.5;
+
+  border-style: none;
+  background: none;
+}
+
+.purshases__select:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 .select-arrow {
   position: absolute;
-  right: 19px;
-  top: 15px;
+  right: 15px;
+
+  pointer-events: none;
+}
+
+.stat-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
 }
 
 .stat-card {
-  min-width: 458px;
-  padding: 25px;
+  min-width: 100%;
+
+  padding: 15px;
 
   border: 1.57px solid #EDF2F7;
   border-radius: 19px;
@@ -86,19 +162,19 @@
 }
 
 .stat-card__text {
-  margin-left: 19px;
+  margin-left: 11px;
 }
 
 .stat-card__title {
   font-family: "Manrope ExtraBold", sans-serif;
-  font-size: 19px;
+  font-size: 11px;
   line-height: 1.5;
   color: #1A202C;
 }
 
 .stat-card__change {
   font-family: "Manrope Medium", sans-serif;
-  font-size: 16px;
+  font-size: 9px;
   line-height: 1.5;
   color: #A0AEC0;
 }
@@ -107,13 +183,14 @@
   margin-left: auto;
 
   font-family: "Manrope Medium", sans-serif;
-  font-size: 22px;
+  font-size: 13px;
   line-height: 1.5;
   color: #1A202C;
 }
 
 .stat-card__progress {
-  height: 10px;
+  height: 6px;
+
   border-radius: 78px;
 }
 
@@ -128,17 +205,20 @@
 .stat-card__fill {
   width: 73%;
   height: inherit;
+
   border-radius: inherit;
 }
 
 .stat-card__fill-expense {
   width: 73%;
+
   background-color: #6C5FBC;
 }
 
 
 .stat-card__fill-vocher {
   width: 60%;
+
   background-color: #FBAD18;
 }
 

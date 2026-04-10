@@ -1,6 +1,21 @@
 .footer {
   position: relative;
+
   background-color: #EAEAEA;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: 
+    "logo social"
+    "menu menu"
+    "copyright copyright";
+
+  width: 100%;
+
+  padding-top: 55px;
 }
 
 .footer__top {
@@ -9,20 +24,24 @@
 
   padding-top: 96px;
   padding-bottom: 29px;
+
   border-bottom: 1px solid rgba(129, 129, 129, 0.8);
 }
 
 .footer__list {
   display: flex;
-  align-items: center;
-  gap: 70px;
+  flex-direction: column;
+  gap: 30px;
+
+  margin-bottom: 32px;
+  padding-top: 53px;
 }
 
 .footer__link {
   font-family: "Inter Medium", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.5;
-  color: #999999;
+  color: #606060;
 }
 
 .footer__link:hover {
@@ -30,23 +49,32 @@
 }
 
 .footer__bottom {
-  padding-top: 57px;
-  padding-bottom: 81px;
-
   display: flex;
   justify-content: space-between;
+
+  padding-top: 57px;
+  padding-bottom: 81px;
 }
 
 .footer__copyright {
+  padding: 26px 0 36px;
+
+  text-align: center;
+  border-top: 1px solid #CBCBCB;
+}
+
+.footer__copyright-text {
   font-family: "Inter Medium", sans-serif;
-  font-size: 17px;
+  font-size: 13px;
   line-height: 1.5;
-  color: #999999;
+  color: #999;
 }
 
 .footer__social {
   display: flex;
-  gap: 54px;
+  align-items: center;
+  justify-content: right;
+  gap: 20px;
 }
 
 .social-icon {
@@ -57,40 +85,18 @@
   color: #5146a6;
 }
 
+.footer__logo {
+  grid-area: logo;
+}
 
+.footer__social {
+  grid-area: social;
+}
 
+.footer__menu {
+  grid-area: menu;
+}
 
-
-
-
-
-
-
-/* БЭК АП */
-/* @media (max-width: 892px) {
-  .footer__top {
-    flex-direction: column;
-    justify-content: left ;
-    gap: 53px;
-    padding-top: 55px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  .footer__list {
-    flex-direction: column;
-    gap: 30px;
-    align-items: start;
-  }
-
-  .footer__social {
-    position: absolute;
-    top: 12%;
-    right: 30px;
-    gap: 20px;
-  }
-
-  .social-icon__svg {
-    width: 16px;
-  }
-} */
+.footer__copyright {
+  grid-area: copyright;
+}

@@ -1,47 +1,109 @@
 .discount__container {
   position: relative;
+
   max-width: 1214px;
-  margin-bottom: 216px;
-  padding: 64px 0 61px 66px;
+
+  margin-bottom: 198px;
+  padding: 35px 27px 95px 27px;
+
+  text-align: center;
 
   background-color: #6C5FBC;
-  background-image: url(../images/discount/discount-bg.png);
-  background-position: left;
   border-radius: 30px;
+}
+
+.discount__container--menu-page {
+  position: relative;
+
+  padding: 12px 0 26px 23px;
+
+  text-align: left;
+
+  background-image: url("../images/discount/discount-bg.png");
+  background-repeat: repeat;
+  background-position: -60px 0;
+  border-radius: 10px;
+}
+
+.discount__container--menu-page::after {
+  content: "";
+
+  position: absolute;
+  top: -13px;
+  right: -20px;
+
+  width: 22px;
+  height: 22px;
+
+  background-image: url("../images/discount/illustration-discount.png");
+  background-repeat: no-repeat;
 }
 
 .discount__img {
   position: absolute;
-  top: 64px;
+  top: 75%;
   right: 72px;
+
+  width: 170px;
+  height: auto;
+}
+
+.discount__img--menu-page {
+  top: 20%;
+  right: 6%;
+
+  width: 102px;
+  height: auto;
 }
 
 .discount__title {
   margin-bottom: 34px;
+
   font-family: "Poppins ExtraBold", sans-serif;
-  font-size: 70px;
+  font-size: 42px;
   line-height: 1;
   color: #FFFFFF;
+  text-transform: uppercase;
+
   opacity: 0.8;
+}
+
+.discount__title--menu-page {
+  margin-bottom: 0;
+
+  font-size: 30px;
+  opacity: 1;
+}
+
+.discount__text {
+  font-family: "Poppins ExtraBold", sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 1;
+  color: #7C6FCD;
+  text-transform: uppercase;
 }
 
 .discount__form {
   position: relative;
-  width: 440px;
+
+  width: 100%;
 }
 
 .discount__input {
   width: 100%;
+
   padding: 22px 100px 22px 22px;
-  border-radius: 14px;
-  border: 1px solid #ccc;
-  background-color: rgba(255, 255, 255, 0.8);
 
   font-family: "Poppins Regular", sans-serif;
-  font-size: 16px;
+  font-size: 11px;
   line-height: 1;
   letter-spacing: 3%;
   color: #878787;
+
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 14px;
+  border: 1px solid #ccc;
 }
 
 .discount__input:focus {
@@ -54,64 +116,19 @@
   top: 7px;
   right: 7px;
   bottom: 7px;
-  padding: 0 20px;
-  background-color: #6C5FBC;
-  border: none;
-  border-radius: 11px;
-  font-size: 16px;
+
+  padding: 10px 16px;
+
   cursor: pointer;
 
   font-family: "Poppins Medium", sans-serif;
-  font-size: 15px;
+  font-size: 10px;
   line-height: 1;
   letter-spacing: 3%;
   color: #F7F8FA;
   text-transform: uppercase;
+
+  background-color: #6C5FBC;
+  border: none;
+  border-radius: 11px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* БЭК АП */
-/* @media (max-width: 892px) {
-  .discount__container {
-    padding: 35px 27px 95px 27px;
-  }
-
-  .discount__title {
-    font-size: 41px;
-    text-align: center;
-  }
-
-  .discount__form {
-    width: 100%;
-  }
-  .discount__input {
-    font-size: 11px;
-  }
-
-  .discount__form-button {
-    font-size: 9px;
-  }
-
-  .discount__img  {
-    max-width: 160px;
-    height: auto;
-    top: 75%;
-    left: 28%;
-  }
-} */
